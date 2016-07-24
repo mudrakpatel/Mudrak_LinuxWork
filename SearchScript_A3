@@ -1,0 +1,21 @@
+#!/bin/bash
+# @ author : Mudrak Patel
+# @ purpose : To add search functionality into the program
+# programStarted >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+clear
+tput cup 8 45; echo "Insert new Student info"
+tput cup 9 45; echo "======================="
+tput cup 11 45; echo "Please enter student name: "
+tput cup 12 45; read name
+
+tput cup 12 45;
+t=$(echo `awk -F: -v result="$name" '$2==result || $3==result{printf "%10s", $2}' Q1_assignment3`)
+if [ "$t" == "$name" ]; then
+    echo `awk -F: -v result="$name" '$2==result{printf "%0d %10s %10s %10s %10s %10s", $1, $2, $3, $4, $5, $6}' Q1_assignment3`
+else 
+  echo "No matching record found"
+fi
+# programEnded >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+ 
+

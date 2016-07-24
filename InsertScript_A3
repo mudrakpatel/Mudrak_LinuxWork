@@ -1,0 +1,31 @@
+#!/bin/bash
+#@ author : Mudrak Patel
+#@ purpose : Shell script to insert student information to existing file
+# program started >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+clear
+tput cup 8 45; echo "Add Student Info"
+tput cup 9 45; echo "================"
+tput cup 10 45; echo "Student ID"
+tput cup 11 45; echo "FirstName"
+tput cup 12 45; echo "LastName"
+tput cup 13 45; echo "Gender (M/F)"
+tput cup 14 45; echo "Department"
+tput cup 15 45; echo "Enrolment Date"
+
+tput cup 10 61; read Studentid
+tput cup 11 61; read FirstName
+tput cup 12 61; read LastName 
+tput cup 13 61; read Gender
+tput cup 14 61; read Department
+tput cup 15 61; read EnrollmentDate
+
+
+tput cup 19 45; echo "Add another? (y) for yes and (q) for quit"
+tput cup 20 45; read yn
+if [ "$yn" == y ]; then
+       echo "$Studentid:$FirstName:$LastName:$Gender:$Dept:$Edate" | cat>>Q1_assignment3
+else 
+   ./Q2_assignment3.menu
+fi 
+# program ended >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
