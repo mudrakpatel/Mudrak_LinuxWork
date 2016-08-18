@@ -1,0 +1,41 @@
+#optionsDiv{
+ height:350px;
+ margin-left:auto;
+ margin-right:auto;
+ background-color:#3d3d29;
+ color:white;
+}
+/*Styling the div tags for the functionality options*/
+#CarInfoHeading_Div{
+ color:white;
+ font-family: Verdana, Sans-serif;
+ margin-left: 515px;
+ margin-right: auto;
+ font-size:25px;
+ margin-bottom:5px;
+}
+#option1{
+ color:white;
+ font-family: Verdana, Sans-serif;
+ margin-left: 550px;
+ margin-right: auto;
+ 
+}
+#option2{
+ color:white;
+ font-family: Verdana, Sans-serif;
+ margin-left: 550px;
+ margin-right: auto;
+
+}
+#option3{
+ color:white;
+ font-family: Verdana, Sans-serif;
+ margin-left: 550px;
+ margin-right: auto;
+}
+.optionLink{
+ color:white;
+ font-family: Verdana, Sans-serif;
+ text-decoration: none;
+}
